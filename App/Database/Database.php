@@ -1,11 +1,15 @@
 <?php
+namespace App\Database;
 
-class DatabaseCrud
+use PDO;
+use PDOException;
+
+class Database
 {
-    private $host = "your_host";
-    private $username = "your_username";
-    private $password = "your_password";
-    private $database = "your_database";
+    private $host = "localhost";
+    private $username = "root";
+    private $password = "";
+    private $database = "topsis";
     private $connection;
 
     public function __construct()
