@@ -4,10 +4,10 @@ namespace App\Controllers;
 
 use App\Controllers\Controller;
 
-class HomeController extends Controller {
+class DataController extends Controller {
     public function index() {
         // Panggil view dengan memberikan data
-        $this->view('home', ['title' => 'Home']);
+        $this->view('data');
     }
 
     public function about() {
