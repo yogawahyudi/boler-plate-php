@@ -17,7 +17,7 @@ ob_start(); // Start buffering output
                         <div class="row gap-4">
                             <div class="col-12">
                                 <label for="name" class="label mb-2">Criteria Name</label>
-                                <input type="text" class="form-control" id="name" name="name">
+                                <input type="text" class="form-control" id="name" name="criteria" >
                             </div>
                             <div class="col-12">
                                 <label for="name" class="label mb-2">Criteria Weight</label>

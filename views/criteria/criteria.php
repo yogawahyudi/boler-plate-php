@@ -20,14 +20,14 @@ ob_start(); // Start buffering output
             <table class="table table-hover text-center">
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Type</th>
-                        <th>Bobot</th>
+                        <th style="width: 50%;">Name</th>
+                        <th style="width: 25%;">Type</th>
+                        <th style="width: 25%;">Bobot</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
-                        if (empty($criteria)) { 
+                        if (empty($criterias)) { 
                     ?>
                          <tr>
                             <td colspan="3">
@@ -39,6 +39,22 @@ ob_start(); // Start buffering output
                             </td>
                         </tr>          
                     <?php
+                        } else { 
+                            foreach($criterias as $criteria) {
+                    ?>
+                        <tr>
+                            <td>
+                                <?= $criteria['criteria']?>
+                            </td>
+                            <td>
+                                <?= $criteria['weight']?>
+                            </td>
+                            <td>
+                                <?= $criteria['type']?>
+                            </td>
+                        </tr>
+                    <?php
+                            }
                         }
                     ?>
                 </tbody>

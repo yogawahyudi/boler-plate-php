@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../assets/js/jquery.min.js"></script>
     <title><?php echo $pageTitle; ?></title>
     <!-- Include your common stylesheets, scripts, etc. here -->
 </head>
@@ -11,6 +12,7 @@
     <?php include_once 'views/partials/navbar.php'; ?>
     <div class="container-fluid">
         <main>
+            <?php include_once 'views/partials/alerts.php';?>
             <?php echo $content; ?>
         </main>
         <nav class="navbar fixed-bottom navbar-dark bg-primary">
