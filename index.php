@@ -1,5 +1,6 @@
 <?php
 require 'vendor/autoload.php';
+session_start();
 
 use App\Middleware\CustomMiddleware;
 use App\Router\Router;
